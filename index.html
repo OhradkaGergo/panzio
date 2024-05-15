@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panzió</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Panzió - szobafoglalás</h1>
+    <div>
+        <hr>
+        <div>
+            <p>Érkezés dátuma: <input type="date" name="erkD" id="erkD"> <br>
+            
+            Távozás dátuma: <input type="date" name="tavD" id="tavD"></p>
+        </div>
+        <hr>
+        <div>
+            <p>
+                Szoba típusa:
+                <br>
+                <input type="radio" name="egyagy" id="egyagy">
+                <input type="radio" name="ketagy" id="ketagy">
+                <input type="radio" name="ketagy+1" id="ketagy+1">
+                <input type="radio" name="ketagy+2" id="ketagy+2">
+            </p>
+        </div>
+        <div>
+            <p>
+                Vendégek száma:
+                <br>
+                Vendégek életkora:
+            </p>
+        </div>
+        <div>
+            <p>
+                Ellátás:
+                <input type="radio" name="reggeli" id="reggeli">
+                <input type="radio" name="felpanzio" id="felpanzio">
+                <input type="radio" name="teljespanzio" id="teljespanzio">
+            </p>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
