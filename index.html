@@ -8,38 +8,96 @@
 </head>
 <body>
     <h1>Panzió - szobafoglalás</h1>
-    <div>
+    <div class="urlap">
         <hr>
         <div>
-            <p>Érkezés dátuma: <input type="date" name="erkD" id="erkD"> <br>
+            <label for="erkD">Érkezés dátuma:</label>
+            <input type="date" name="erkD" id="erkD">
             
-            Távozás dátuma: <input type="date" name="tavD" id="tavD"></p>
+            <br>
+            
+            <label for="tavD"> Távozás dátuma:</label>
+            <input type="date" name="tavD" id="tavD">
         </div>
         <hr>
         <div>
-            <p>
-                Szoba típusa:
-                <br>
-                <input type="radio" name="egyagy" id="egyagy">
-                <input type="radio" name="ketagy" id="ketagy">
-                <input type="radio" name="ketagy+1" id="ketagy+1">
-                <input type="radio" name="ketagy+2" id="ketagy+2">
-            </p>
+            <label for="radio">Szoba típusa:</label>
+            <br>
+            <input type="radio" name="egyagy" id="egyagy"> <label for="egyagy">Egyágyas - 9.000 Ft/éj</label>
+
+            <br>
+
+            <input type="radio" name="ketagy" id="ketagy"> <label for="ketagy">Kétágyas - 15.000 Ft/éj</label>
+
+            <br>
+
+            <input type="radio" name="ketagy+1" id="ketagy+1"> <label for="ketagy+1">Kétágyas 1 pótággyal - 18.000 Ft/éj</label>
+
+            <br>
+            
+            <input type="radio" name="ketagy+2" id="ketagy+2"> <label for="ketagy+2">Kétágyas 2 pótággyal - 21.000 Ft/éj</label>
         </div>
+        <hr>
         <div>
-            <p>
-                Vendégek száma:
-                <br>
-                Vendégek életkora:
-            </p>
+            <label for="fo">Vendégek száma:</label>
+            <select name="" id="fo">
+                <option value="1fo">1</option>
+                <option value="2fo">2</option>
+                <option value="3fo">3</option>
+                <option value="4fo">4</option>
+            </select> fő
+            
+            <br>
+
+            <label for="ev1">Vendégek életkora:</label>
+            <input type="number" name="ev1" id="">
+            <input type="number" name="ev2" id="">
+            <input type="number" name="ev3" id="">
+            <input type="number" name="ev4" id="">  
         </div>
+        <hr>
         <div>
-            <p>
-                Ellátás:
-                <input type="radio" name="reggeli" id="reggeli">
-                <input type="radio" name="felpanzio" id="felpanzio">
-                <input type="radio" name="teljespanzio" id="teljespanzio">
-            </p>
+            <label for="radio">Ellátás:</label>
+
+            <br>
+
+            <input type="radio" name="reggeli" id="reggeli"> <label for="reggeli">Reggeli - 900 Ft/nap/fő</label>
+
+            <br>
+
+            <input type="radio" name="felpanzio" id="felpanzio"> <label for="felpanzio">Félpanzió - Ft/nap/fő</label>
+
+            <br>
+
+            <input type="radio" name="teljespanzio" id="teljespanzio"> <label for="teljespanzio">Teljes panzió - 4.900 Ft/nap/fő</label>
+        </div>
+        <hr>
+        <div>
+            <label for="furdo1">Fürdő szolgáltatások:</label>
+
+            <br>
+
+            <input type="checkbox" name="furdo1" id="furdo1"> <label for="furdo1">Beltéri medencék - 800 Ft/nap/fő</label>
+
+            <br>
+
+            <input type="checkbox" name="furdo2" id="furdo2"> <label for="furdo2">Kültéri medencék - 800 Ft/nap/fő</label>
+
+            <br>
+
+            <input type="checkbox" name="furdo3" id="furdo3"> <label for="furdo3">Szauna belépő - 800 Ft/nap/fő</label>
+
+            <br>
+
+            <input type="checkbox" name="furdo4" id="furdo4"> <label for="furdo4">Teljes belépő - 2.000 Ft/nap/fő</label>
+        </div>
+        <hr>
+        <div>
+            <label for="egyebk">Egyéb kérdés, kívánság:</label>
+
+            <br>
+
+            <textarea name="egyebk" id="egyebk" cols="30" rows="10"></textarea>
         </div>
     </div>
     <script src="app.js"></script>
