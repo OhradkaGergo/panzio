@@ -13,10 +13,7 @@ select {
 
 label {
     margin-bottom: 4px;
-}
-
-hr {
-    width: 50%;
+    display:inline-block;
 }
 
 h1 {
@@ -30,57 +27,69 @@ body {
 
 .parent {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(2, 300px);
+    grid-template-rows: repeat(6);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     padding: 10px;
     padding-left: 50px;
     padding-right: 50px;
-    width: 700px;
+    width: 600px;
     margin: 0 auto;
     background-color: rgb(230, 230, 230);
 }
     
 .div1 {
-    grid-area: 1 / 1 / 2 / 2; 
+    grid-area: 1 / 1 / 2 / 2;
+    margin-bottom: 3px;
 }
 .div2 { 
     grid-area: 1 / 2 / 2 / 3;
     float: left;
+    margin-bottom: 3px;
 }
 .div3 {
     grid-area: 2 / 1 / 3 / 2;
+    margin-bottom: 3px;
 }
 .div4 {
     grid-area: 2 / 2 / 3 / 3;
     float: left;
+    margin-bottom: 3px;
 }
 .div5 {
     grid-area: 3 / 1 / 4 / 2;
+    margin-bottom: 3px;
 }
 .div6 {
     grid-area: 3 / 2 / 4 / 3;
     float: left;
+    margin-bottom: 3px;
 }
 .div7 {
     grid-area: 4 / 1 / 5 / 2;
+    margin-bottom: 3px;
 }
 .div8 {
     grid-area: 4 / 2 / 5 / 3;
     float: left;
+    margin-bottom: 3px;
 }
 .div9 {
     grid-area: 5 / 1 / 6 / 2;
+    margin-bottom: 3px;
 }
 .div10 {
     grid-area: 5 / 2 / 6 / 3;
     float: left;
+    margin-bottom: 3px;
 }
 .div11 {
     grid-area: 6 / 1 / 7 / 2;
+    margin-bottom: 3px;
 }
 .div12 {
     grid-area: 6 / 2 / 7 / 3;
     float: left;
+    margin-bottom: 3px;
 }
