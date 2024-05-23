@@ -54,19 +54,19 @@
         </div>
 
         <div class="div6">
-            <select name="" id="fo">
-                <option value="1fo">1</option>
-                <option value="2fo">2</option>
-                <option value="3fo">3</option>
-                <option value="4fo">4</option>
+            <select name="fo" id="fo">
+                <option value="1 fő">1 fő</option>
+                <option value="2 fő">2 fő</option>
+                <option value="3 fő">3 fő</option>
+                <option value="4 fő">4 fő</option>
             </select> fő
             
             <br>
     
-            <input type="number" name="ev1" id="">
-            <input type="number" name="ev2" id="">
-            <input type="number" name="ev3" id="">
-            <input type="number" name="ev4" id="">  
+            <input type="number" name="ev1" id="ev1">
+            <input type="number" name="ev2" id="ev2">
+            <input type="number" name="ev3" id="ev3">
+            <input type="number" name="ev4" id="ev4">  
         </div>
 
         <div class="div7">
@@ -74,15 +74,15 @@
         </div>
 
         <div class="div8">
-            <input type="radio" name="reggeli" id="reggeli"> <label for="reggeli">Reggeli - 900 Ft/nap/fő</label>
+            <input type="radio" name="Reggeli" id="reggeli"> <label for="reggeli">Reggeli - 900 Ft/nap/fő</label>
 
             <br>
 
-            <input type="radio" name="felpanzio" id="felpanzio"> <label for="felpanzio">Félpanzió - Ft/nap/fő</label>
+            <input type="radio" name="Félpanzió" id="felpanzio"> <label for="felpanzio">Félpanzió - 2.900 Ft/nap/fő</label>
 
             <br>
 
-            <input type="radio" name="teljespanzio" id="teljespanzio"> <label for="teljespanzio">Teljes panzió - 4.900 Ft/nap/fő</label>
+            <input type="radio" name="Teljes panzió" id="teljespanzio"> <label for="teljespanzio">Teljes panzió - 4.900 Ft/nap/fő</label>
         </div>
 
         <div class="div9">
@@ -113,6 +113,9 @@
             <textarea name="egyebk" id="egyebk" cols="30" rows="10"></textarea>
         </div>
     </div>
+
+    <input type="button" value="Költségkalculáció" onclick="Szamitas()">
+
     <script src="app.js"></script>
 </body>
 </html>

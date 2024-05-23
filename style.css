@@ -2,6 +2,12 @@ input[type="number"]{
     width: 14%;
 }
 
+input[type="button"] {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+
 input[type="date"], input[type="number"], textarea, select {
     color: red;
     margin-bottom: 4px;
