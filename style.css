@@ -43,6 +43,8 @@ body {
     width: 600px;
     margin: 0 auto;
     background-color: rgb(230, 230, 230);
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
 }
     
 .div1 {

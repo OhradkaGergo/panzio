@@ -7,7 +7,8 @@ function Szamitas() {
     let tavozasNap = tavozas.getDate().toString();
     let tavozasHonap = tavozas.getMonth() + 1;
     let tavozasEv = tavozas.getFullYear().toString();
-    let toltottIdo = ((tavozas-erkezes) / 3600000 ) /24;
+    let egyNap = 24*60*60*1000
+    let toltottIdo = Math.round(Math.abs((tavozas - erkezes) / egyNap));
     let szobaT;
     let vendegekSz = document.getElementById("fo").value;
     let ellatas;
@@ -28,20 +29,20 @@ function Szamitas() {
     }
     else if(document.getElementById("ketagy+2").checked == true){
         szobaT = "Kétágyas 2 pótággyal";
-        penz += 18000 * toltottIdo;
+        penz += 21000 * toltottIdo;
     }
 
     if(document.getElementById("reggeli").checked == true){
         ellatas = "Reggeli";
-        penz += 800 * toltottIdo;
+        penz += 900 * toltottIdo;
     }
     else if(document.getElementById("felpanzio").checked == true){
         ellatas = "Félpanzió";
-        penz += 800 * toltottIdo;
+        penz += 2900 * toltottIdo;
     }
     else if(document.getElementById("teljespanzio").checked == true){
         ellatas += "Teljes panzió";
-        penz += 800 * toltottIdo;
+        penz += 4900 * toltottIdo;
     }
     
     if(document.getElementById("furdo1").checked == true){
