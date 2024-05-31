@@ -5,6 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Panzió</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+        function disablePastDates() {
+            var today = new Date();
+            var dd = String(today.getDate()).padStart(2, '0');
+            var mm = String(today.getMonth() + 1).padStart(2, '0');
+            var yyyy = today.getFullYear();
+
+            today = yyyy + '-' + mm + '-' + dd;
+            document.getElementById("erkD").setAttribute("min", today);
+            document.getElementById("tavD").setAttribute("min", today);
+        }
+    </script>
 </head>
 <body>
     <h1>Panzió - szobafoglalás</h1>
@@ -18,11 +30,11 @@
         </div>
 
         <div class="div2">
-            <input type="date" name="erkD" id="erkD">
+            <input type="date" name="erkD" id="erkD" onfocus="disablePastDates()">
             
             <br>
 
-            <input type="date" name="tavD" id="tavD">
+            <input type="date" name="tavD" id="tavD" onfocus="disablePastDates()">
         </div>
 
         <div class="div3">
@@ -102,7 +114,7 @@
 
             <br>
 
-            <input type="checkbox" name="furdo4" id="furdo4"> <label for="furdo4">Teljes belépő - 2.000 Ft/nap/fő</label>
+            <input type="checkbox" name="furdo4" id="furdo4" onclick="_Disable()"> <label for="furdo4">Teljes belépő - 2.000 Ft/nap/fő</label>
         </div>
 
         <div class="div11">
