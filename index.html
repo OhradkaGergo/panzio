@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="hu">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,22 +17,29 @@
             document.getElementById("erkD").setAttribute("min", today);
             document.getElementById("tavD").setAttribute("min", today);
         }
+
+        function _Disable() {
+            document.getElementById("furdo1").checked == false;
+            document.getElementById("furdo2").checked == false;
+            document.getElementById("furdo3").checked == false;
+        }
     </script>
 </head>
+
 <body>
     <h1>Panzió - szobafoglalás</h1>
     <div class="parent">
         <div class="div1">
             <label for="erkD">Érkezés dátuma:</label>
-            
+
             <br>
-            
-            <label for="tavD"> Távozás dátuma:</label> 
+
+            <label for="tavD"> Távozás dátuma:</label>
         </div>
 
         <div class="div2">
             <input type="date" name="erkD" id="erkD" onfocus="disablePastDates()">
-            
+
             <br>
 
             <input type="date" name="tavD" id="tavD" onfocus="disablePastDates()">
@@ -50,11 +58,13 @@
 
             <br>
 
-            <input type="radio" name="div4radio" id="ketagy+1"> <label for="ketagy+1">Kétágyas 1 pótággyal - 18.000 Ft/éj</label>
+            <input type="radio" name="div4radio" id="ketagy+1"> <label for="ketagy+1">Kétágyas 1 pótággyal - 18.000
+                Ft/éj</label>
 
             <br>
-        
-            <input type="radio" name="div4radio" id="ketagy+2"> <label for="ketagy+2">Kétágyas 2 pótággyal - 21.000 Ft/éj</label>
+
+            <input type="radio" name="div4radio" id="ketagy+2"> <label for="ketagy+2">Kétágyas 2 pótággyal - 21.000
+                Ft/éj</label>
         </div>
 
         <div class="div5">
@@ -72,13 +82,13 @@
                 <option value="3 fő">3 fő</option>
                 <option value="4 fő">4 fő</option>
             </select> fő
-            
+
             <br>
-    
+
             <input type="number" name="ev1" id="ev1">
             <input type="number" name="ev2" id="ev2">
             <input type="number" name="ev3" id="ev3">
-            <input type="number" name="ev4" id="ev4">  
+            <input type="number" name="ev4" id="ev4">
         </div>
 
         <div class="div7">
@@ -90,11 +100,13 @@
 
             <br>
 
-            <input type="radio" name="div8radio" id="felpanzio"> <label for="felpanzio">Félpanzió - 2.900 Ft/nap/fő</label>
+            <input type="radio" name="div8radio" id="felpanzio"> <label for="felpanzio">Félpanzió - 2.900
+                Ft/nap/fő</label>
 
             <br>
 
-            <input type="radio" name="div8radio" id="teljespanzio"> <label for="teljespanzio">Teljes panzió - 4.900 Ft/nap/fő</label>
+            <input type="radio" name="div8radio" id="teljespanzio"> <label for="teljespanzio">Teljes panzió - 4.900
+                Ft/nap/fő</label>
         </div>
 
         <div class="div9">
@@ -102,11 +114,13 @@
         </div>
 
         <div class="div10">
-            <input type="checkbox" name="furdo1" id="furdo1"> <label for="furdo1">Beltéri medencék - 800 Ft/nap/fő</label>
+            <input type="checkbox" name="furdo1" id="furdo1"> <label for="furdo1">Beltéri medencék - 800
+                Ft/nap/fő</label>
 
             <br>
 
-            <input type="checkbox" name="furdo2" id="furdo2"> <label for="furdo2">Kültéri medencék - 800 Ft/nap/fő</label>
+            <input type="checkbox" name="furdo2" id="furdo2"> <label for="furdo2">Kültéri medencék - 800
+                Ft/nap/fő</label>
 
             <br>
 
@@ -114,13 +128,14 @@
 
             <br>
 
-            <input type="checkbox" name="furdo4" id="furdo4" onclick="_Disable()"> <label for="furdo4">Teljes belépő - 2.000 Ft/nap/fő</label>
+            <input type="checkbox" name="furdo4" id="furdo4" onclick="_Disable()"> <label for="furdo4"
+                onclick="_Disable()">Teljes belépő - 2.000 Ft/nap/fő</label>
         </div>
 
         <div class="div11">
             <label for="egyebek">Egyéb kérdés, kívánság:</label>
         </div>
-        
+
         <div class="div12">
             <textarea name="egyebk" id="egyebk" cols="30" rows="10"></textarea>
         </div>
@@ -130,4 +145,5 @@
 
     <script src="app.js"></script>
 </body>
+
 </html>
